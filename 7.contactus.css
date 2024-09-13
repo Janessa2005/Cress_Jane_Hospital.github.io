@@ -1,0 +1,327 @@
+/* Root Variables */
+:root {
+  --primary-color: #4682B4; /* Steel Blue */
+  --secondary-color: #87CEFA; /* Light Sky Blue */
+  --background-color: #F0F8FF; /* Alice Blue */
+  --text-color: #000000; /* Black */
+  --border-color: #B0C4DE; /* Light Steel Blue */
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3 {
+  color: var(--primary-color);
+}
+
+h1 {
+  color: var(--text-color);
+}
+
+p {
+  color: #ffffff; /* Default paragraph color */
+}
+
+.logo img {
+  max-width: 200px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.search-form input[type="text"] {
+  padding: 5px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.search-form button {
+  padding: 5px 10px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: var(--secondary-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header, footer {
+  background-color: var(--primary-color);
+  border-bottom: 2px solid var(--border-color);
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0;
+}
+
+.header-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1 {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-form input[type="text"] {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-form button {
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-form button:hover {
+  background-color: #ffffff;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: var(--secondary-color); /* Changed color for better visibility */
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  padding: 10px 20px;
+  display: block;
+  font-size: 16px;
+  color: white;
+  text-align: center; /* Centered text within the nav links */
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+}
+
+nav a:hover {
+  background-color: var(--secondary-color); /* Lighter background on hover */
+  color: var(--primary-color); /* Text color on hover */
+}
+
+/* Main content styling */
+main {
+  padding: 2em;
+  text-align: center;
+}
+
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 1em;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+/* Contact form styling */
+.contact-section form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1em;
+  background-color: #fff;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+}
+
+form fieldset {
+  border: none;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+}
+
+form button {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  padding: 0.7em 2em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Footer Styling */
+footer {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 2em;
+  text-align: center;
+}
+
+footer a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin-top: 1em;
+}
+
+/* Media Queries for Mobile Responsiveness */
+
+/* Devices with a max width of 1200px (large tablets and smaller desktops) */
+@media (max-width: 1200px) {
+  .header-container {
+    padding: 0 10px;
+  }
+
+  .search-form input[type="text"], 
+  .search-form button {
+    font-size: 14px;
+  }
+}
+
+/* Devices with a max width of 992px (medium tablets and smaller desktops) */
+@media (max-width: 992px) {
+  .header-main {
+    flex-direction: column;
+  }
+
+  .header-container {
+    width: 90%;
+  }
+
+  .search-form {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .search-form input[type="text"] {
+    margin-bottom: 10px;
+  }
+}
+
+/* Devices with a max width of 768px (tablets) */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .search-form input[type="text"], 
+  .search-form button {
+    font-size: 14px;
+  }
+
+  fieldset {
+    padding: 15px;
+  }
+
+  legend {
+    font-size: 1em;
+  }
+}
+
+/* Devices with a max width of 480px (mobile phones) */
+@media (max-width: 480px) {
+  .logo img {
+    max-width: 150px;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .search-form input[type="text"], 
+  .search-form button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 10px 20px;
+  }
+
+  fieldset {
+    padding: 10px;
+  }
+
+  legend {
+    font-size: 0.9em;
+  }
+
+  footer a {
+    color: var(--text-color);
+  }
+}

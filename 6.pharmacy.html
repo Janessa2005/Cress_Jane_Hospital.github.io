@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Page</title>
+    <link rel="stylesheet" href="6.pharmacy.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header-main">
+        <div class="header-container">
+            <img src="logo 2.png" alt="Logo" width="10%" height="auto" align="left">
+
+            <br>
+            <br>
+            
+            <!-- Search Form -->
+            <form class="search-form" action="#" method="get">
+                <input type="text" name="select" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+
+        <br>
+        <br>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <ul>
+                <li><a href="1.homepage.html">Home Page</a></li>
+                <li><a href="2.aboutus.html">About Us</a></li>
+                <li><a href="3.services.html">Services</a></li>
+                <li><a href="4.doctors.html">Doctors</a></li>
+                <li><a href="5.consulting.html">Consulting Reservation</a></li>
+                <li><a href="6.pharmacy.html">Pharmacy</a></li>
+                <li><a href="7.contactus.html">Contact Us</a></li>
+                <li><a href="8.payments.html">Payments Portal</a></li>
+            </ul>
+        </nav>
+
+        <br>
+        <br>
+
+        <h1><center>Cress Jane Pharmacy</center></h1>
+
+        <br>
+        <br>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="form-section">
+            <form id="pharmacy-form">
+                <fieldset>
+                    <legend>Patient Information Form</legend>
+
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="condition">Select Your Condition</label>
+                    <select id="condition" name="condition" required>
+                        <option value="">Select Condition</option>
+                        <option value="Emergency Care">Emergency Care</option>
+                        <option value="Surgical Services">Surgical Services</option>
+                        <option value="Intensive Care Unit (ICU)">Intensive Care Unit (ICU)</option>
+                        <option value="Cardiology">Cardiology</option>
+                        <option value="Pediatrics">Pediatrics</option>
+                        <option value="Obstetrics and Gynecology">Obstetrics and Gynecology</option>
+                        <option value="Pharmacy Services">Pharmacy Services</option>
+                        <option value="Mental Health Services">Mental Health Services</option>
+                    </select>
+
+                    <div id="medications-list" class="medications-list">
+                        <!-- Dynamic medication list will be populated here -->
+                    </div>
+
+                    <label for="prescription">Upload Your Prescription Here</label>
+                    <input type="file" id="prescription" name="prescription" accept=".pdf, .jpg, .jpeg, .png" required>
+                    <p>Accepted Formats: PDF, JPG, JPEG, PNG</p>
+
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <section class="contact-us">
+            <h2>Connect with Us</h2>
+            <p><strong>Hotline:</strong> +94 11 7743567</p>
+            <p><strong>Email:</strong> <a href="mailto:info@cressjaneshospital.lk">info@cressjaneshospital.lk</a></p>
+            <p><strong>Address:</strong><br>
+                193/36,<br>
+                Blue Horizon,<br>
+                Katana West,<br>
+                Katana.<br>
+                Negombo.<br>
+                Sri Lanka
+            </p>
+            <p><a href="https://www.google.com/maps" target="_blank">View On Google Maps</a></p>
+        </section>
+
+        <section class="footer-links">
+            <p><a href="#">Privacy Policy</a><br><a href="#">Terms of Service</a></p>
+        </section>
+
+        <p>&copy; 2024 Cress Jane Hospital. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

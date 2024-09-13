@@ -1,0 +1,315 @@
+/* Root Variables */
+:root {
+  --primary-color: #4682B4; /* Steel Blue */
+  --secondary-color: #87CEFA; /* Light Sky Blue */
+  --background-color: #F0F8FF; /* Alice Blue */
+  --text-color: #000000; /* Black */
+  --border-color: #B0C4DE; /* Light Steel Blue */
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: var(--primary-color);
+}
+
+h1 {
+  color: var(--background-color);
+}
+
+p {
+  color: #ffffff; /* Default paragraph color */
+}
+
+.logo img {
+  max-width: 200px;
+  height: auto;
+  margin-right: 20px;
+  align: left;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.search-form input[type="text"] {
+  padding: 5px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.search-form button {
+  padding: 5px 10px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: var(--secondary-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header, footer {
+  background-color: var(--primary-color);
+  border-bottom: 2px solid var(--border-color);
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0;
+}
+
+.header-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1 {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-form input[type="text"] {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-form button {
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-form button:hover {
+  background-color: #ffffff;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: var(--secondary-color); /* Changed color for better visibility */
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  padding: 10px 20px;
+  display: block;
+  font-size: 16px;
+  color: white;
+  text-align: center; /* Centered text within the nav links */
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+}
+
+nav a:hover {
+  background-color: var(--secondary-color); /* Lighter background on hover */
+  color: var(--primary-color); /* Text color on hover */
+}
+
+main {
+  font-family: 'Times New Roman', Times, serif;
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: var(--text-color); /* Text color for main section */
+}
+
+main p {
+  color: var(--text-color); /* Black color for paragraphs in main section */
+}
+
+/* Style change for two images under h2 "Connect Compare with the Passion" */
+.connect-compare-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.connect-compare-images img {
+  width: 48%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: left;
+  padding: 20px;
+  border-top: 2px solid var(--border-color);
+  color: white; /* Changed text color to white */
+}
+
+footer h2 {
+  color: white; /* Changed heading color to white */
+}
+
+footer a {
+  color: white; /* Changed link color to white */
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries */
+
+/* Adjust layout for tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .header-main {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .logo img {
+    max-width: 150px; /* Adjust logo size for smaller screens */
+    margin-right: 10px;
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack navigation items vertically */
+    align-items: center;
+  }
+
+  nav a {
+    padding: 8px 15px; /* Reduce padding for navigation links */
+  }
+
+  .search-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-form input[type="text"] {
+    width: 100%; /* Full width input field */
+    margin-bottom: 10px; /* Add space between input and button */
+  }
+
+  .search-form button {
+    width: 100%; /* Full width button */
+  }
+
+  .connect-compare-images img {
+    width: 100%; /* Full width images for better display */
+    margin-bottom: 20px;
+  }
+}
+
+/* Adjust layout for mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 10px; /* Reduce padding on mobile */
+  }
+
+  h1 {
+    font-size: 24px; /* Reduce heading size for better visibility */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack nav items vertically on mobile */
+  }
+
+  nav a {
+    padding: 8px 15px; /* Reduce padding for nav items */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .connect-compare-images img {
+    width: 100%; /* Ensure images are responsive */
+  }
+
+  main {
+    padding: 10px; /* Add padding for better readability */
+  }
+
+  footer {
+    padding: 10px;
+    text-align: center; /* Center align footer on mobile */
+  }
+
+  footer h2 {
+    font-size: 18px; /* Adjust heading size for mobile */
+  }
+
+  footer a {
+    font-size: 14px; /* Adjust link size for mobile */
+  }
+}
+
+/* Adjust layout for small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px; /* Further reduce heading size for small screens */
+  }
+
+  nav a {
+    padding: 6px 12px; /* Reduce padding more for smaller screens */
+    font-size: 12px; /* Smaller font size */
+  }
+
+  .search-form input[type="text"],
+  .search-form button {
+    font-size: 14px; /* Reduce font size for search form */
+  }
+
+  footer h2 {
+    font-size: 16px; /* Adjust footer heading size */
+  }
+
+  footer a {
+    font-size: 12px; /* Adjust link size */
+  }
+}
